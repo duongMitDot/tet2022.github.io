@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy new year</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css'/>
+</head>
+<body>
+    <div class="Main">
+        <svg view-box="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="100%">Xuân Nhâm Dần</text>
+            </symbol>
+            <g class="g-ants">
+                <use xlink:href="#s-text" class='text_copy'></use>
+                <use xlink:href="#s-text" class='text_copy'></use>
+                <use xlink:href="#s-text" class='text_copy'></use>
+                <use xlink:href="#s-text" class='text_copy'></use>
+                <use xlink:href="#s-text" class='text_copy'></use>
+            </g>
+        </svg>
+        <div class="timeup">
+            <ul class="listTime">
+                <li class="item_time">
+                    <p class="title">Ngày</p>
+                    <p class="time days"></p>
+                </li>
+                <li class="item_time">
+                    <p class="title">Giờ</p>
+                    <p class="time hours"></p>
+                </li>
+                <li class="item_time">
+                    <p class="title">Phút</p>
+                    <p class="time minutes"></p>
+                </li>
+                <li class="item_time">
+                    <p class="title">Giây</p>
+                    <p class="time seconds"></p>
+                </li>
+            </ul>
+        </div>
+        <div class="musics">
+            <span class="play-btn">
+                <i class="far fa-play-circle"></i>
+            </span>
+            <span class="pause-btn hide">
+                <i class="far fa-pause-circle"></i>
+            </span> 
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Main {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('http://giupban.com.vn/wp-content/uploads/2019/09/hinh-nen-phao-hoa-chuyen-dong-24.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+svg {
+    position: absolute;
+    width: 100%;
+    display: block;
+    font: 11em 'Montserrat';
+    top: 0.5em;
+}
+
+.text_copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text_copy:nth-child(1){
+  stroke: #4c0be2;
+  animation-delay: -1;
+}
+
+.text_copy:nth-child(2){
+  stroke: #1145d4;
+  animation-delay: -2s;
+}
+
+.text_copy:nth-child(3){
+  stroke: #0492a5;
+  animation-delay: -3s;
+}
+
+.text_copy:nth-child(4){
+  stroke: #7fca06;
+  animation-delay: -4s;
+}
+
+.text_copy:nth-child(5){
+  stroke: #31fd6e;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+.timeup {
+    position: absolute;
+    width: 100%;
+    top: 20em;
+    display: flex;
+    justify-content: center;
+}
+
+.listTime {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.item_time {
+    overflow: hidden;
+    width: 10em;
+    box-shadow: 0 0 10px 0 #D4145A;
+    border-radius: 0.3em;
+    margin: 2em;
+}
+
+.title {
+    color: rgb(255, 102, 0);
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.3em 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.time {
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to bottom right, #D4145A, #FBB03B);
+    padding: 1em;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+@keyframes rotateBtn {
+    from{
+        transform: rotate(0deg);  
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.musics {
+    position: absolute;
+    color: #fff;
+    bottom: 3em;
+    right: 3em;
+    cursor: pointer;
+}
+
+.play-btn {
+    position: absolute;
+    font-size: 2em;
+}
+.play-btn.hide {
+    display: none;
+}
+
+.pause-btn {
+    position: absolute;
+    font-size: 2em;
+}
+.pause-btn.hide {
+    display: none;
+}
